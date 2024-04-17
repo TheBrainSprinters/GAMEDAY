@@ -1,0 +1,44 @@
+[gd_scene load_steps=3 format=3 uid="uid://chp0hkr21toga"]
+
+[ext_resource type="FontFile" uid="uid://dauim2k0tskyv" path="res://unispace rg.otf" id="1_ho2nr"]
+[ext_resource type="Script" path="res://main_lobby.gd" id="1_vrtay"]
+
+[node name="MainLobby" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_vrtay")
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -90.0
+offset_top = -75.0
+offset_right = 90.0
+offset_bottom = -30.0
+grow_horizontal = 2
+grow_vertical = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_fonts/font = ExtResource("1_ho2nr")
+theme_override_font_sizes/font_size = 20
+text = "PLAY"
+
+[node name="FullScreenToggle" type="CheckButton" parent="."]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -127.0
+offset_bottom = 31.0
+grow_horizontal = 0
+text = "Fullscreen"
+
+[connection signal="toggled" from="FullScreenToggle" to="." method="_on_full_screen_toggle_toggled"]
