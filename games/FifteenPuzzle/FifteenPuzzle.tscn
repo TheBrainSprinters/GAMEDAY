@@ -1,6 +1,6 @@
 [gd_scene load_steps=19 format=3 uid="uid://cjrohpooys7ow"]
 
-[ext_resource type="Script" path="res://games/FifteenPuzzle/FifteenPuzzle.gd" id="1_fshg2"]
+[ext_resource type="Script" uid="uid://dw4jbky48kwa7" path="res://games/FifteenPuzzle/FifteenPuzzle.gd" id="1_fshg2"]
 [ext_resource type="Texture2D" uid="uid://1ohjimpig7yi" path="res://games/FifteenPuzzle/img/tile1.png" id="1_glx6w"]
 [ext_resource type="Texture2D" uid="uid://briehglkfhj53" path="res://games/FifteenPuzzle/img/tile2.png" id="2_gm01w"]
 [ext_resource type="Texture2D" uid="uid://c1phs10rdcnn0" path="res://games/FifteenPuzzle/img/tile3.png" id="3_58xw1"]

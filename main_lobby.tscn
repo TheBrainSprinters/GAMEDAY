@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://chp0hkr21toga"]
 
 [ext_resource type="FontFile" uid="uid://dauim2k0tskyv" path="res://unispace rg.otf" id="1_ho2nr"]
-[ext_resource type="Script" path="res://main_lobby.gd" id="1_vrtay"]
+[ext_resource type="Script" uid="uid://cet2yu7qde0qi" path="res://main_lobby.gd" id="1_vrtay"]
 
 [node name="MainLobby" type="Control"]
 layout_mode = 3
@@ -12,7 +12,7 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_vrtay")
 
-[node name="Button" type="Button" parent="."]
+[node name="PlayButton" type="Button" parent="."]
 layout_mode = 1
 anchors_preset = 7
 anchor_left = 0.5
@@ -41,4 +41,5 @@ offset_bottom = 31.0
 grow_horizontal = 0
 text = "Fullscreen"
 
+[connection signal="pressed" from="PlayButton" to="." method="_on_play_button_pressed"]
 [connection signal="toggled" from="FullScreenToggle" to="." method="_on_full_screen_toggle_toggled"]

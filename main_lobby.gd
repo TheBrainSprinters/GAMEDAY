@@ -14,3 +14,7 @@ func _on_full_screen_toggle_toggled(toggled_on):
 		DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_FULLSCREEN)
 	else:
 		DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_WINDOWED)
+
+func _on_play_button_pressed():
+	
+	pass

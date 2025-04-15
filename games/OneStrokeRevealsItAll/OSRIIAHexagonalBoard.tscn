@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=4 uid="uid://cicgjw613ldkq"]
+
+[ext_resource type="Texture2D" uid="uid://boh6u62lxni0" path="res://games/OneStrokeRevealsItAll/sprites.png" id="1_mceu5"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_542d3"]
+texture = ExtResource("1_mceu5")
+texture_region_size = Vector2i(66, 66)
+0:0/0 = 0
+1:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_uu44c"]
+tile_shape = 3
+tile_size = Vector2i(66, 66)
+sources/2 = SubResource("TileSetAtlasSource_542d3")
+
+[node name="OsriiaHexagonalBoard" type="Node2D"]
+
+[node name="TileMapLayer" type="TileMapLayer" parent="."]
+tile_map_data = PackedByteArray("AAAEAAAAAgABAAAAAAADAAAAAgABAAAAAAACAAAAAgABAAAAAAABAAEAAgABAAAAAAABAAIAAgABAAAAAAAEAAEAAgABAAEAAAAFAAIAAgABAAEAAAAEAAMAAgABAAAAAAAEAAQAAgABAAAAAAADAAQAAgABAAAAAAACAAQAAgABAAEAAAABAAMAAgABAAEAAAACAAIAAgABAAEAAAACAAEAAgABAAEAAAADAAEAAgABAAEAAAAEAAIAAgABAAAAAAADAAIAAgABAAAAAAADAAMAAgABAAEAAAACAAMAAgABAAAAAAAAAAMAAgABAAAAAAABAAQAAgABAAAAAAABAAUAAgABAAAAAAADAAUAAgABAAEAAAACAAUAAgABAAEAAAAEAAUAAgABAAEAAAAFAAQAAgABAAEAAAAFAAMAAgABAAEAAAACAAYAAgABAAAAAAAEAAYAAgABAAAAAAADAAYAAgABAAAAAAAFAAAAAgABAAAAAAAFAAEAAgABAAAAAAAGAAIAAgABAAAAAAAGAAMAAgABAAAAAAAGAAQAAgABAAAAAAAFAAUAAgABAAAAAAAFAAYAAgABAAAAAAA=")
+tile_set = SubResource("TileSet_uu44c")
